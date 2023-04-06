@@ -1,0 +1,64 @@
+.klasa{
+    color:green;
+
+}
+h2{
+    text-align:center;
+}
+#p1{
+    color: blue;
+
+
+}
+
+/* div p{
+    font-size: 30px;
+    text-decoration:double;
+} */
+/* div > p {
+
+    font-size: 30px;
+} */
+
+/* p+div{
+    color: purple;
+    font-size: 30px;
+}         */
+
+/* a{
+    color:red;
+}
+a:visited{
+    color:grey;
+} */
+
+body>a:visited{
+
+    color:red;
+}
+/* kad se klinke font se uveca */
+a:active{
+    font-size:40px;
+}
+/* TREBA PROVERITI OVO */
+/* #p1::first-line{
+    font-size:60px;
+} */
+
+/* p:first-child{
+    border: 5px dotted silver;
+} */
+p:first-of-type{
+
+    color:yellow;
+}
+
+p:nth-child(2){
+
+    border: 5px dotted blue;
+}
+/* ofarbace 2.  */
+/* li:nth-child(2), li:nth-child(3), li:nth-child(5){} koje mi hocemo */
+li:nth-child(2n){
+    color:red;
+}

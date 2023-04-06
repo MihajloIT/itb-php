@@ -1,0 +1,46 @@
+body{
+    
+    background: url('https://i.ytimg.com/vi/xno0fuwUVMI/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-color:black;
+    
+}
+
+img{
+    border-style:double;
+    border-color: blue;
+    border-width: 10px;
+}
+h2{
+    text-align:center;
+    font-size:35px;
+    color:blue;
+
+}
+
+.p13{
+    color:red;
+    font-family: helvetica ;
+    font-size: 25px;
+}
+.p2{
+
+    color:rgb(8, 5, 153);
+    font-size: 20px;
+
+}
+
+a:link{
+
+    color: purple;
+}
+a:visited{
+    color: purple;
+}
+
+a:hover{
+    color: green;
+}

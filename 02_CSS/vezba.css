@@ -1,0 +1,39 @@
+h1{
+    color: green;
+}
+h2{
+    color: brown;
+}
+p{
+    color:blue;
+}
+a{
+    color:red;
+}
+body{
+    background-color:rgb(141, 189, 141);
+    font-family:arial;
+    font-size:20px
+}
+.naslov{
+    text-align:center;
+}
+.p{
+    text-align:right;
+    font-size: 24px;
+}
+img{
+    border-style:dashed;
+}
+#glavni{
+    text-align:center;
+    font-family:"Times new roman";
+    color: rgb(5, 238, 5);
+}
+a:hover{
+    color:yellow;
+
+}
+a:visited{
+    color:rgb(49, 238, 49);
+}
