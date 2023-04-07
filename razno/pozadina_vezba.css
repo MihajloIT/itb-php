@@ -1,0 +1,19 @@
+body{
+    margin:0;
+}
+
+.divTop{
+
+    background-image: url('https://png.pngtree.com/background/20210715/original/pngtree-the-reflection-of-the-lake-in-the-world-of-wonderland-lugu-picture-image_1272021.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: auto; */
+    background-blend-mode: darken;
+    background-color: white;
+
+
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
