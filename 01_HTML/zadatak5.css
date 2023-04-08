@@ -1,0 +1,25 @@
+body{
+
+    font-size: 25px;
+}
+
+
+div{
+    border: solid;
+    border-width:1px;
+
+}
+
+input{
+    margin: 4px;
+    padding: 5px;
+    
+    cursor: text;
+    border-radius: 7px;
+    
+}
+input:hover{
+
+    color:green;
+}
+

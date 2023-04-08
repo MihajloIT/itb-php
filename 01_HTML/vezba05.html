@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+   <form action="test.php" method="get">
+    <!-- nije obavezno da se koristi fieldset forma  -->
+    <fieldset>
+        <legend>Osnovni podaci</legend>
+         <p>
+             <label for="username">Username : </label>
+             <input type="text" value="" name="username" id="username" placeholder="Proba" maxlength="4" >
+         </p>
+         <p>
+            <label for="password">Password : </label>
+            <input type="password" name="password" id="password">
+
+         </p>
+         <input type="hidden" name="id" value="5">
+         <label for="">Serach : </label>
+         <input type="serach">
+
+    </fieldset>
+     <fieldset>
+        <legend>Dodatni podaci</legend>
+        <p>
+            <label for="age">Age : </label>
+            <!-- <input type="number" name="age" id="age" min="0" max="100" step="10"> -->
+        </p>
+        <p>
+            <label for="em">Email : </label>
+            <input type="email" name="em" id="em">
+        </p>
+        <p>
+            <label for="gender">Gender : </label>
+            <input type="radio" name="gender" id="male" value="male">Male
+            <input type="radio" name="gender" id="female" value="female">Female
+            <input type="radio" name="gender" id="child" value="child">Child
+        </p>
+        <p>
+            <label for="sub">Subscribe to email newsletter ? </label>
+            <input type="radio" name="sub" id="yes" value="yes" checked="checked"> Yes
+            <input type="radio" name="sub" id="no" value="no"> No
+        </p>
+     </fieldset>
+     <p>
+     <input type="submit" value="Submit">
+     </p>
+     <fieldset>
+        <legend>Choose your curse : </legend>
+        <p>
+            <label for="course">Courses : </label>
+            <input type="checkbox" name="html" id="html" value="true"> HTML
+            <input type="checkbox" name="css" id="css" value="true"> CSS
+            <input type="checkbox" name="php" id="php" value="true"> PHP
+            
+        </p>
+        <p>
+            <label for="city">City : </label>
+            <select name="city" id="city">
+                <!-- opciju "Izaberi" stavi prazno pa im da opciju da biraju , value je prazno i to ce biti indikator posle kad se sredjuje sajt da ne moze da prodje bez unosa texta -->
+                <option value="" >Izaberi</option>
+                <optgroup label="Grad">
+                    <option value="bg">Beograd</option>
+                    <option value="ns">Novi Sad</option>
+                    <option value="le">Leskovac</option>
+                </optgroup> 
+                <optgroup label="Opstina">
+                    <option value="nb">Novi Beograd</option>
+                    <option value="lb">Lebane</option>
+                </optgroup>
+            </select>
+        </p>
+     </fieldset>
+   </form>
+</body>
+</html>
