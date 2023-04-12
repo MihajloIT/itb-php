@@ -1,0 +1,34 @@
+div{
+    background-color: aquamarine;
+    overflow:hidden;
+}
+
+
+/* pretvaramo blokovski element u inline element ali da moze da mu se utice na visinu sirinu , i moze da se utice na njihov redosled */
+/* p{
+    background-color: antiquewhite;
+    float: left;
+    width: 220px;
+    height: 30px;
+} */
+
+/* ide se redjanje na desnu stranu */
+/* p{
+    background-color: antiquewhite;
+    float: right;
+    width: 220px;
+    height: 30px;
+} */
+
+
+/* svi da idu desno a neki da imaju izuzetak */
+p{
+    background-color: antiquewhite;
+    float: right;
+    width: 220px;
+    height: 30px;
+}
+
+p:nth-child(2n){
+    float:left;
+}

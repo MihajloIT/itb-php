@@ -1,0 +1,66 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+
+}
+.row{
+    width: 100%;
+    overflow: hidden;
+}
+
+[class*="col-"]{
+    float:left;
+}
+
+/* @media only screen and(min-width:1000px){
+
+
+
+    
+}
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 8.33%*2;
+}
+.col-3{
+    width: calc(8.33%*3);
+}
+.col-4{
+    width: calc(8.33%*4);
+}
+.col-6{
+    width: calc(8.33%*6);
+}
+.col-12{
+    width: 100%;
+} */
+
+header{
+    background-color: aquamarine;
+}
+ul{
+    list-style-type: none;
+}
+.red{
+    position: relative;
+    top:0px;
+    width: 100%;
+    overflow:hidden;
+    width: 100%;
+}
+.red nav{
+    float: left;
+    text-align: center;
+    background-color: yellow;
+}
+.red section{
+    float: left;
+
+}
+
+article{
+    background-color:lightblue;
+}

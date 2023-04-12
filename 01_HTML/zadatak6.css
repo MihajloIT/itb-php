@@ -1,0 +1,32 @@
+/* span{
+    border: dashed;
+    border-width: 2px;
+    border-color: blue;
+    margin: 20px 10px;
+    padding: 15px 15px 3px 15px;
+    display:inline-block;
+    width: 300px;
+    height: 30px;
+     
+} */
+
+/* PROFA RADIO */
+*{
+
+    box-sizing:border-box;
+}
+#d1{
+    border: dotted;
+    margin: 0;
+    width: 100%;
+}
+
+#d1 span{
+    background-color: aquamarine;
+    border: 2px solid black;
+    padding: 10px 5px 3px 8px;
+    width: 50%;
+    display: inline-block;
+    
+
+}

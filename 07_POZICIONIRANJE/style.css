@@ -1,0 +1,45 @@
+div{
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    width: 200px;
+    height: 140px;
+
+}
+
+/* FIXIRAN SADRZAJ U JEDNOM DELU EKRANA - SVE VREME OSTAJE NA TOM MESTU U BROWSERU */
+/* #d2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* top: 10%;
+    right: 300px; 
+
+} */
+
+/* RADIMO RELATIVE pomeranje u odnosu na poziciju koju bi inace imao da nema position */
+#d2{
+
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+/* SAD HOCEMO DA POZICIONIRAMO ELEMENT U ODNOSU NA DIV KOJI JE VEC POZICIONIRAN */
+#d2 h3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin:0;
+}
+#d2 p{
+    position: absolute;
+    bottom: 0;
+    margin:0;
+}
+
+/* Z-INDEX - kretanje po z osi ( to je osa koja ide ka licu koje gleda sajt) */
+
+div:last-of-type{
+    position: relative;
+    z-index:1;
+    
+}

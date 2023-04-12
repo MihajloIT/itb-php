@@ -1,0 +1,15 @@
+div{
+
+    background-color: rgb(235, 150, 39);
+    overflow: hidden;
+
+}
+
+p{
+    box-sizing:border-box;
+    background-color: aqua;
+    border:solid;
+    weight: 200px;
+    height: 20px;
+    float:left
+}

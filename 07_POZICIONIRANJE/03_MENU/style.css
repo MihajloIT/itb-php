@@ -1,0 +1,113 @@
+/* Horizontalni meni */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.topbar{
+    position: fixed;
+    top: 0;
+    /* background-color: yellow; */
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.topbar ul{
+    overflow: hidden;
+    /* ovo dole je za skidanje bulleta/ tackica iz <li> */
+    list-style-type: none;
+
+}
+
+.topbar ul li{
+    float: left;
+    width: 25%;
+    border: solid 1px yellow;
+    text-align: center;
+    background-color: darkcyan;
+}
+
+.topbar ul li a{
+    color: black;
+    /* skidanje linije linka na  */
+    text-decoration: none;
+    /* da utice na gornji i donji pading ali ne i left right */
+    padding: 10px 0;
+    /* linijski tag se pravi u blokovski u donjem textu, ne treba inline-block jer ovo moze samo da se siri do visine roditelja , i na ovaj nacin org u html-u moze ceo kvadrat da bude klikljiv ne samo text */
+    display: block;
+    font-size: 20px;
+}
+
+.topbar ul li a:hover{
+    background-color: purple;
+}
+/* ovo je ubacio da bi se h1 i pe videlo na stranici, to je jedan nacin
+body{
+    padding-top: 50px;
+} */
+
+/* isto sredio h1 i p da se vide na drugi nacin , ubacio section */
+section{
+    position: relative;
+    top: 50px;
+    
+}
+
+.red{
+    position: relative;
+    top: 50px;
+    overflow:hidden;
+}
+
+.red aside{
+    float: left;
+    width: 30%;
+    background-color: purple;
+
+}
+.red aside ul{
+    list-style-type: none;
+}
+.red aside ul li{
+    border: 1px solid red;
+    text-align: center;
+    background-color: yellow;
+
+}
+.red aside ul li a{
+    color: brown;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    font-size: 20px;
+
+}
+.red aside ul li:hover{
+    background-color: purple;
+}
+
+.red section{
+    float: left;
+    width: 70%;
+    background-color: burlywood;
+    padding: 20px;
+}
+
+/* padajuci meni je samo ovo .dropdown i .topbar... */
+.dropdown{
+    display: none;
+}
+
+/* ovako se kreira da se pojavi padajuci meni, kaze tek kad je 4. dete u hover stanju onda dropdown bude block */
+.topbar li:nth-child(4):hover .dropdown{
+    display: block;
+}
+
+@media only screen and (min-width:600){
+    .col-t-1{width: calc(100%/12*2)}
+
+}

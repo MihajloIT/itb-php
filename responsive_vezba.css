@@ -1,0 +1,41 @@
+*{
+    box-sizing:border-box;
+}
+.row{
+    width:100%;
+    overflow:hidden;
+}
+header{
+    background-color: aquamarine;
+}
+
+/* pozivaju se klase koji krecu sa "col-" */
+[class*="col-"]{
+    float: left;
+    width: 100%;
+}
+
+.col-1{
+    /* 100%:12 delova je 8.33 zirina jedne od 12 kolona */
+    width: 8.33%
+}
+
+
+
+nav{
+    background-color:rgb(26, 121, 204);
+}
+article{
+    background-color: purple;
+}
+
+aside{
+    background-color: yellow;
+}
+footer{
+    background-color:orange;
+}
+
+.col-12{
+    
+}
