@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkslateblue;
+    
+}
+.row{
+    position:fixed;
+    top: 0;
+    width:100%;
+    /* navbar je nestajao dok nisam stavio visinu i sve fixirao,  */
+    height:230px;
+    z-index:1;
+    background-image: url('https://cdn.shopify.com/s/files/1/0200/7616/articles/Lego-Puzzle-Box.jpg?v=1647693460&width=800');
+}
+
+
+.row ul{
+    overflow:hidden;
+    list-style-type: none;
+    
+}
+
+.row ul li{
+    float:left;
+    width: 25%;
+    border:solid 2px white;
+    background-color:grey;
+    font-size: 20px;
+    text-align:center;
+    
+}
+.row ul li p{
+    display:block;
+    padding: 15px 0;
+    border: solid 1px white;
+
+}
+
+.dropdown{
+    display: none;
+}
+.row ul li p:hover{
+    background-color:red;
+}
+
+
+.row li:nth-child(4):hover .dropdown{
+    display: block;
+
+}
+
+/* OVO ME KOCILO SVE VREME DA ORGANIZUJEM TEXT
+.row ul li p{
+    padding: 15px 0;
+}  */
+
+
+.divBottom{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%);
+}
+.divBottom h1{
+    color: blue;
+    font-size: 30px;
+}
+

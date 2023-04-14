@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    background-color: skyblue;
+    
+}
+
+.topbar{
+    position: fixed;
+    top: 0;
+    width:100%;
+    /* NI OVO NE TREBA NEGO U *{STAVI MARGIN 0 I PADDIN 0 JER TO UTICE I NA BODY TAG I ONDA TRAKA IDE OD IVICE DO IVICE
+    left:0;
+    right:0; */
+    z-index: 1;
+    
+    
+}
+
+
+.topbar ul{
+    overflow: hidden;
+    list-style-type: none;
+}
+.topbar ul li{
+    /* ovo je stavio u *{ da se na sve odnosi 
+    box-sizing: border-box; */
+    /* i bez position je isto, on nije stavljao
+    position:relative; */
+    float:left;
+    text-align: center;
+    width: 25%;
+    /* height: 40px; ZBOG OVOG MI SE NIJE VIDEO PADAJUCI MENI .dropdown */
+    /* text-align: center; */
+    border: solid 1px white;
+    background-color: grey;
+   
+}
+.topbar ul li a{
+    color: black;
+    text-decoration: none;
+    display:block;
+    padding: 10px 0;
+}
+.dropdown a{
+    border:solid white 1px;
+}
+.topbar ul li a:hover{
+    background-color: red;
+}
+
+.red{
+    position:relative;
+    top: 40px;
+    overflow:hidden;
+    
+
+}
+
+.red aside{
+    width: 30%;
+    float:left;
+}
+.red aside ul li{
+    border: solid 2px brown;
+    height: 40px;
+    text-align: center;
+    background-color: blue;
+
+}
+.red aside ul li:hover{
+    background-color:yellow;
+}
+.red aside ul li a{
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: white;
+}
+.red section{
+    float: left;
+    width:70%;
+    border: solid 2px red;
+    background-color:chocolate;
+    padding:20px ;
+}
+
+/* naredna dva ne trebaju jer je to ressio stavljanjem u section float left width 70% i padinga */
+/* .red section h1{
+    position:relative;
+    left: 10px;
+    top: 20px;
+}
+.red section p{
+    position:relative;
+    left: 10px;
+    top: 20px;
+} */
+
+
+
+/* .meni{
+    float: inherit;
+    width:100%;
+    
+
+} */
+
+.dropdown{
+    display: none;
+}
+
+.topbar li:nth-child(4):hover .dropdown{
+    display: block;
+}
+

@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+
+    height: 10px;
+
+    /* NE PRIKAZUJE DEO TEXTA 
+    overflow: hidden;*/
+    /* prikazace tekst iako je preko njega drugi element
+    overflow: visible; */
+
+    /* tekst ce biti odsecen ali ce biti i skrol botom da se vidi ostatak teksta
+    overflow: scroll; */
+}
+/* vezbao da inline element postavim kao block i da upravljam ali ne ide bas */
+/* span{
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    border: solid 1px;
+    padding: 0;
+
+}
+p{
+    border: solid 1px red;
+    position: absolute;
+    margin:0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    
+} */
