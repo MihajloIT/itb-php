@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.row{
+    overflow:hidden;
+    width: 100%;
+}
+
+[class*="col-"]{
+    float:left;
+    width:100%;
+}
+
+
+header{
+    background-color:aqua;
+    text-align: center;
+    height: 50px;
+}
+
+li{
+    background-color:#00cccc;
+    height: 50px;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 15px;
+    border-bottom: solid #00ffff 1px;
+    list-style-type: none;
+}
+
+h3{
+    margin-bottom: 10px;
+}
+
+img:hover{
+    opacity:0.7;
+}
+article{
+    padding: 15px 20px;
+    height: 150px;
+    background-color: aqua;
+    background-image: linear-gradient(#00cccc, white);
+}
+
+img{
+    width: 100%;
+    height:300px;
+}
+
+aside{
+    padding: 20px 20px;
+    background-color: aqua;
+    background-image: linear-gradient(#00cccc, white);
+    /* height: 200px; */
+}
+aside h4{
+    
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: aqua;
+    height: 50px;
+    text-align: center;
+}
+
+@media only screen and (min-width:1000px){
+
+    [class*=col-]{
+        width:100%;
+    }
+
+    .col-1{
+        width: calc(100%/12);
+    }
+    .col-2{
+        width: calc(100%/12*2);
+    }
+    .col-3{
+        width: 25%;
+    }
+    .col-4{
+        width: calc(100%/12*4);
+    }
+    .col-5{
+        width: calc(100%/12*5);
+    }
+    .col-6{
+        width: 50%;
+    }
+    .col-7{
+        width: calc(100%/12*7);
+    }
+    .col-8{
+        width: calc(100%/12*8);
+    }
+    .col-9{
+        width: 75%;
+    }
+    .col-10{
+        width: calc(100%/12*10);
+    }
+    .col-11{
+        width: calc(100%/12*11);
+    }
+    .col-12{
+        width: 100%;
+    }
+    } 
+
+    /* 2. dodatak u vezbi */
+
+
+    @media only screen and (max-width:700px){
+
+
+
+        [class*= col-]{
+            width:100%;
+        }
+        .hide{
+            display: none;
+        }
+        h4:hover + .hide{
+            display:block;
+        }
+
+
+        }
+    
+

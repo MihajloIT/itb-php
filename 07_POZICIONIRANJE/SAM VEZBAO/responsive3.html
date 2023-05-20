@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="responsive3.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-12">
+            <header>
+                <h1>Dodir prirode</h1>
+            </header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <nav>
+                <ul>
+                    <li>Biljke</li>
+                    <li>Zivotinje</li>
+                    <li>Pejzazi</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-9">
+            <article>
+                <h3>Podelite svoje fotografije prirode s nama !</h3>
+                <p>"Nema stvari koja bi bila tako vredna poucavanja kao priroda."
+                    -Nikola Tesla
+                </p>
+            </article>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <!-- ovo se ubaciju da slika menja sa promenom sirine -->
+            <picture>
+                <source srcset="SLIKE/nebo.jpg" media="(max-width: 500px)">
+                <img src="SLIKE/drvece.jpg" alt="">
+            </picture>
+        </div>
+        <div class="col-4">
+            <img src="SLIKE/nebo.jpg" alt="">
+        </div>
+        <div class="col-4">
+            <img src="SLIKE/vodopad.jpg" id="slika3" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <aside id="biljke">
+                <h4>Biljke</h4>
+                <div class="hide">
+                    <p>Sreca- to je biti sa prirodom, gledati je i s njom govoriti. L.N.Tolstoj</p>
+                </div>
+            </aside>
+        </div>
+        <div class="col-4">
+            <aside>
+                <h4>Zivotinje</h4>
+                <div class="hide">
+                    <em>Priroda je jedina knjiga koja na svim listovima nudi mnogo sadrzaja. Goethe</em>
+                </div>
+            </aside>
+        </div>
+    <div class="col-4">
+        <aside>
+            <h4>Pejzazi</h4>
+            <div class="hide">
+                <p>Priroda nam skriva svoje tajne jer je velicanstvena, a ne jer je varalica. Zagledaj se duboko, duboko
+                    u prirodu, i tad ces sve bolje razumeti. Alber Einstein</p>
+            </div>
+        </aside>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <footer>
+                <h3>Dobrodosli na nas sajt !</h3>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
