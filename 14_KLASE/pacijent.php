@@ -28,10 +28,9 @@ class Pacijent
 
         $bmi = $this->tezina/(($this->visina/100)**2);
         if($bmi<15 || $bmi>40){
-            echo "True";
-        }else{
-            echo "False";
+            return true;
         }
+        return false;
     }
 
     function KriticanProba(){
@@ -44,7 +43,7 @@ $p1 = new Pacijent();
 
 $p1 ->ime = "Pera";
 $p1 ->visina = 175;
-$p1 ->tezina = 93;
+$p1 ->tezina = 993;
 
 $p2 = new Pacijent();
 
@@ -56,7 +55,7 @@ $p3 = new Pacijent();
 
 $p3 ->ime = "Krsta";
 $p3 ->visina = 188;
-$p3 ->tezina = 66;
+$p3 ->tezina = 90;
 
 $p1 -> Stampaj();
 $p2 -> Stampaj();
@@ -65,11 +64,11 @@ $p3 -> Stampaj();
 $p1 -> Bmi();
 $p2 -> Bmi();
 $p3 -> Bmi();
-
-$p1 -> Kritican(); echo "<br>";
-$p2 -> Kritican(); echo "<br>";
-$p3 -> Kritican(); echo "<br>";
-
+echo "<hr>";
+echo $p1 -> Kritican(); echo "<br>";
+echo $p2 -> Kritican(); echo "<br>";
+echo $p3 -> Kritican(); echo "<br>";
+echo "<hr>";
 $p3 -> KriticanProba();
 
 ?>
